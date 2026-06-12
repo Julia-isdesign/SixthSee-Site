@@ -1,0 +1,40 @@
+
+/* ---- Imagem ---- */
+
+
+.b-paragrafo__link {
+	padding:10px 10px 20px;
+	margin-bottom:30px;
+	display:block;
+	background-color:var(--hex-miv-branco);
+	border-radius:var(--raio); }
+
+
+@media (min-width:720px) {
+	.b-paragrafo__link {
+		width:calc(40% - 20px);
+		margin-left:40px;
+		float:right; }
+
+	.b-paragrafo--i .b-paragrafo__link {
+		margin-right:40px;
+		margin-left:0;
+		float:left; }
+
+	.b-paragrafo--x .b-paragrafo__link {
+		width:calc(50% - 20px); }
+}
+
+
+.b-paragrafo__imagem {
+	aspect-ratio:auto;
+	overflow:hidden;
+	border-radius:var(--raio); }
+
+
+.b-paragrafo__legenda {
+	padding-top:20px;
+	text-align:center; }
+
+
+/* ---- isDesign.com.br ---- */

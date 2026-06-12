@@ -1,0 +1,20 @@
+# isDesign - www.isdesign.com.br
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	Options +FollowSymlinks
+	
+	#
+	# inicial
+	Redirect /index.htm		https://www.seecranes.ind.br/site/
+	
+	# Painel
+	RewriteRule ^painel/?$ https://www.isdesign.com.br/painel/v1 [NC,L]
+	
+	#
+	# erros
+	ErrorDocument 400	https://www.seecranes.ind.br/site
+	ErrorDocument 403	https://www.seecranes.ind.br/site
+	ErrorDocument 404 	https://www.seecranes.ind.br/site
+
+</IfModule>

@@ -1,0 +1,33 @@
+{
+  "name": "seecranes-site",
+  "version": "1.0.0",
+  "description": "Compressão de CSS e JS com Gulp.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isDesign-Softwares/Seecranes-Site.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "gulp"
+  ],
+  "author": "isDesign Softwares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isDesign-Softwares/Seecranes-Site/issues"
+  },
+  "homepage": "https://github.com/isDesign-Softwares/Seecranes-Site#readme",
+  "devDependencies": {
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-convert-encoding": "^3.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

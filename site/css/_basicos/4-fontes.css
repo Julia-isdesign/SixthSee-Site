@@ -1,0 +1,178 @@
+
+/* ---- Fontes ---- */
+
+
+.f-corpo {
+	color:var(--rgba-preto-2);
+	font-size:14px;
+	line-height:24px; }
+
+.f-invertido .f-corpo {
+	color:var(--rgba-branco-1); }
+
+
+.f-legenda {
+	color:var(--rgba-preto-3);
+	font-size:14px;
+	line-height:20px; }
+
+.f-invertido .f-legenda {
+	color:var(--rgba-branco-2); }
+
+
+@media (min-width:720px) {
+	.f-corpo {
+		font-size:16px;
+		line-height:30px; }
+}
+
+/* ---- Títulos ---- */
+
+
+.f-titulo {
+	color:var(--rgba-preto-1);
+	font-size:14px;
+	font-weight:bold;
+	line-height:20px; }
+
+.f-invertido .f-titulo {
+	color:var(--rgba-branco-1); }
+
+.f-titulo--h6 {
+	font-size:16px;
+	line-height:24px; }
+
+.f-titulo--h5 {
+	font-size:18px;
+	line-height:26px; }
+
+.f-titulo--h4 {
+	font-size:20px;
+	line-height:28px; }
+
+.f-titulo--h3 {
+	font-size:24px;
+	line-height:32px; }
+
+.f-titulo--h2 {
+	font-size:32px;
+	line-height:40px; }
+
+.f-titulo--h1 {
+	font-size:36px;
+	line-height:44px; }
+
+
+@media (min-width:720px) {
+	.f-titulo--h4 {
+		font-size:24px;
+		line-height:32px; }
+
+	.f-titulo--h3 {
+		font-size:32px;
+		line-height:40px; }
+
+	.f-titulo--h2 {
+		font-size:36px;
+		line-height:44px; }
+
+	.f-titulo--h1 {
+		font-size:40px;
+		line-height:48px; }
+}
+
+
+/* ---- Link ---- */
+
+
+.f-link {
+	display:inline-flex;
+	align-items:center;
+	gap:4px;
+	color:var(--hex-miv-vermelho-1); }
+
+.f-link:hover {
+	color:var(--hex-miv-vermelho-2);
+	text-decoration:underline; }
+
+
+.f-link__icone {
+	width:20px;
+	height:20px;
+	flex-shrink:0;
+	color:inherit;
+	font-size:20px;
+	transition:color 0.2s; }
+
+.f-link__texto {
+	color:inherit;
+	font-size:14px;
+	font-weight:bold;
+	line-height:20px;
+	text-transform:uppercase;
+	transition:color 0.2s; }
+
+
+/* ---- WYSIWYG ---- */
+
+
+.f-wysiwyg,
+.f-wysiwyg p {
+	color:var(--rgba-preto-2);
+	font-size:16px;
+	line-height:30px; }
+
+.f-invertido .f-wysiwyg,
+.f-invertido .f-wysiwyg p {
+	color:var(--rgba-branco-1); }
+
+
+.f-wysiwyg b,
+.f-wysiwyg strong {
+	font-weight:bold; }
+
+.f-wysiwyg i,
+.f-wysiwyg em {
+	font-style:italic; }
+
+.f-wysiwyg u {
+	text-decoration:underline; }
+
+
+.f-wysiwyg sub,
+.f-wysiwyg sup {
+	font-size:12px;
+	line-height:1; }
+
+.f-wysiwyg sub {
+	vertical-align:sub; }
+
+.f-wysiwyg sup {
+	vertical-align:super; }
+
+
+.f-wysiwyg ol li {
+	list-style:decimal; }
+
+.f-wysiwyg ul li {
+	list-style:disc; }
+
+.f-wysiwyg ol li,
+.f-wysiwyg ul li {
+	margin-left:20px; }
+
+.f-wysiwyg ol li + li,
+.f-wysiwyg ul li + li {
+	margin-top:10px; }
+
+
+.f-wysiwyg a {
+	color:var(--hex-miv-vermelho-1);
+	font-weight:bold; }
+
+.f-wysiwyg a:hover {
+	color:var(--hex-miv-vermelho-2);
+	text-decoration:underline; }
+
+
+/* ---- isDesign.com.br ---- */

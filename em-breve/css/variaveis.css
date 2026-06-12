@@ -1,0 +1,56 @@
+
+:root {
+
+	--fonte:"Helvetica Neue", Helvetica, Arial, serif;
+
+
+	--alfa-branco-1:1;
+	--alfa-branco-2:0.8;
+	--alfa-branco-3:0.6;
+
+	--alfa-preto-1:0.9;
+	--alfa-preto-2:0.75;
+	--alfa-preto-3:0.6;
+
+
+	--hover-opacity:0.5;
+
+
+	--rgba-branco-1:rgba(255,255,255,var(--alfa-branco-1));
+	--rgba-branco-2:rgba(255,255,255,var(--alfa-branco-2));
+	--rgba-branco-3:rgba(255,255,255,var(--alfa-branco-3));
+
+	--rgba-preto-1:rgba(0,0,0,var(--alfa-preto-1));
+	--rgba-preto-2:rgba(0,0,0,var(--alfa-preto-2));
+	--rgba-preto-3:rgba(0,0,0,var(--alfa-preto-3));
+
+
+	--rgba-luz-1:rgba(255,255,255,0.1);
+	--rgba-luz-2:rgba(255,255,255,0.2);
+	--rgba-luz-3:rgba(255,255,255,0.3);
+
+	--rgba-sombra-1:rgba(0,0,0,0.1);
+	--rgba-sombra-2:rgba(0,0,0,0.2);
+	--rgba-sombra-3:rgba(0,0,0,0.3);
+
+
+	--hex-cinza-1:#fafafa;
+	--hex-cinza-2:#f5f5F5;
+	--hex-cinza-3:#e9e9e9;
+	--hex-cinza-4:#d9d9d9;
+	--hex-cinza-5:#c4c4c4;
+	--hex-cinza-6:#9d9d9d;
+	--hex-cinza-7:#7b7b7b;
+	--hex-cinza-8:#555555;
+	--hex-cinza-9:#434343;
+	--hex-cinza-10:#212121;
+
+
+	--hex-miv-branco:#ffffff;
+	--hex-miv-laranja:#fc471c;
+	--hex-miv-preto:#212121;
+
+
+	--hex-padrao-laranja:#ff9500;
+	--hex-padrao-verde:#34c759;
+	--hex-padrao-vermelho:#ff3a30; }

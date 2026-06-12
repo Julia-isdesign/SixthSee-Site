@@ -1,0 +1,64 @@
+
+/* ---- Privacidade ---- */
+
+
+.c-privacidade {
+	width:100%;
+	min-width:320px;
+	position:fixed;
+	top:100%;
+	left:0;
+	z-index:var(--z-index-privacidade);
+	background:var(--hex-miv-preto);
+	transition:transform 0.2s; }
+
+.c-privacidade.ativo {
+	transform:translateY(-100%);
+	transition:transform 0.4s; }
+
+
+/* ---- Envelope ---- */
+
+
+.c-privacidade__envelope {
+	max-width:800px;
+	padding-top:20px;
+	padding-bottom:20px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	gap:20px; }
+
+
+@media (min-width:560px) {
+	.c-privacidade__envelope {
+		flex-direction:row;
+		justify-content:space-between; }
+}
+
+
+/* ---- Texto ---- */
+
+
+.c-privacidade__texto {
+	max-width:420px;
+	margin:auto;
+	color:var(--rgba-branco-1);
+	text-align:center; }
+
+
+@media (min-width:560px) {
+	.c-privacidade__texto {
+		margin:0;
+		text-align:left; }
+}
+
+
+/* ---- Botão ---- */
+
+
+.c-privacidade__botao {
+	flex-shrink:0; }
+
+
+/* ---- isDesign.com.br ---- */

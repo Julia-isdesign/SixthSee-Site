@@ -1,0 +1,270 @@
+
+/* ---- Form ---- */
+
+
+.c-form {
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	gap:20px; }
+
+
+.c-form--incorreto {
+	animation:c-form--incorreto 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform:translateX(0); }
+
+@keyframes c-form--incorreto {
+	10%, 90% { transform:translateX(-1px); }
+	20%, 80% { transform:translateX(2px); }
+	30%, 50%, 70% { transform:translateX(-4px); }
+	40%, 60% { transform:translateX(4px); }
+}
+
+
+/* ---- Espaçador ---- */
+
+
+.c-form__espacador {
+	width:100%;
+	position:relative; }
+
+.c-form .c-form__espacador--p {
+	width:calc((100% - 20px) / 2); }
+
+
+@media (min-width:720px) {
+	.c-form .c-form__espacador--m {
+		width:calc((100% - 20px) / 2); }
+
+	.c-form .c-form__espacador--p {
+		width:calc((100% - (20px * 3)) / 4); }
+}
+
+
+/* ---- Recipiente ---- */
+
+
+.c-form__recipiente {
+	width:100%;
+	display:block; }
+
+
+/* ---- Etiqueta ---- */
+
+
+.c-form__etiqueta {
+	width:100%;
+	margin-bottom:10px;
+	display:block;
+	color:var(--rgba-preto-3);
+	font-size:14px;
+	line-height:20px; }
+
+
+.c-form__etiqueta__aviso {
+	color:var(--hex-padrao-vermelho); }
+
+
+/* ---- Mensagem ---- */
+
+
+.c-form__mensagem {
+	margin-top:10px;
+	display:none;
+	color:var(--rgba-preto-3);
+	font-size:14px;
+	line-height:20px; }
+
+.c-form__mensagem--incorreto {
+	display:block;
+	color:var(--hex-padrao-vermelho); }
+
+
+.c-form__mensagem::before {
+	width:1px;
+	height:1px;
+	padding:0;
+	border:none;
+	overflow:hidden;
+	position:absolute;
+	top:-9999px;
+	left:-9999px;
+	clip:rect(1px,1px,1px,1px);
+	clip-path:inset(0px 0px 99.9% 99.9%); }
+
+.c-form__mensagem--incorreto::before {
+	content:"Preenchido incorretamente: "; }
+
+
+/* ---- Inputs ---- */
+
+
+.c-form__input {
+	width:100%;
+	min-height:48px;
+	padding:12px 16px;
+	border:none;
+	margin:0;
+	background:var(--hex-cinza-1);
+	border:1px solid var(--rgba-sombra-1);
+	border-radius:var(--raio);
+	color:var(--rgba-preto-2);
+	font-family:var(--fonte);
+	font-size:16px;
+	line-height:24px;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	filter:none;
+	outline:none;
+	transition:box-shadow 0.2s, color 0.2s; }
+
+.c-form__input:focus {
+	color:var(--rgba-preto-1); }
+
+.c-form__input::placeholder {
+	color:var(--rgba-preto-3);
+	opacity:1; }
+
+
+.c-form__input:focus {
+	border-color:var(--rgba-sombra-2); }
+
+
+.c-form__input--incorreto {
+	box-shadow:inset 0 0 0 1px var(--hex-padrao-vermelho); }
+
+
+.c-form__input--select {
+	padding-right:39px;
+	background-image:url("../../img/form-select-preto.svg");
+	background-position:calc(100% - 10px) center;
+	background-repeat:no-repeat;
+	background-size:20px; }
+
+.c-form__input--textarea {
+	min-height:182px;
+	padding:16px;
+	line-height:30px;
+	resize:none; }
+
+
+@media (min-width:720px) {
+	.c-form__input--textarea {
+		min-height:122px; }
+}
+
+
+/* ---- Check / Radio ---- */
+
+
+.c-form__check {
+	width:100%;
+	min-height:48px;
+	padding:0 16px;
+	display:flex;
+	flex-direction:column;
+	gap:2px;
+	background:var(--hex-cinza-1);
+	border:1px solid var(--rgba-sombra-1);
+	border-radius:var(--raio); }
+
+.c-form__check--incorreto {
+	box-shadow:0 0 0 1px var(--hex-padrao-vermelho); }
+
+
+.c-form__check__item {
+	width:100%;
+	padding:12px 0;
+	display:flex;
+	align-items:flex-start;
+	cursor:pointer; }
+
+.c-form__check__item + .c-form__check__item {
+	border-top:1px solid var(--rgba-sombra-1);
+}
+
+
+.c-form__check__icone {
+	width:20px;
+	height:20px;
+	margin:2px 12px 2px 0;
+	flex-shrink:0;
+	overflow:hidden; }
+
+.c-form__check__icone::before {
+	color:var(--rgba-preto-3);
+	font-size:20px;
+	transition:color 0.2s; }
+
+.c-form__check__item:hover .c-form__check__icone::before {
+	color:var(--rgba-preto-2); }
+
+
+.c-form__check__texto {
+	color:var(--rgba-preto-3);
+	font-size:16px;
+	line-height:24px;
+	transition:color 0.2s; }
+
+.c-form__check__item:hover .c-form__check__texto {
+	color:var(--rgba-sombra-3); }
+
+
+[type=checkbox] + .c-form__check__icone::before {
+	content:"check_box_outline_blank"; }
+
+[type=checkbox]:checked + .c-form__check__icone::before {
+	content:"check_box"; }
+
+[type=radio] + .c-form__check__icone::before {
+	content:"radio_button_unchecked"; }
+
+[type=radio]:checked + .c-form__check__icone::before {
+	content:"radio_button_checked"; }
+
+
+/* ---- Aviso ---- */
+
+
+.c-form__aviso {
+	width:100%;
+	padding:12px 16px;
+	display:none;
+	align-items:flex-start;
+	background:var(--hex-cinza-10);
+	border-radius:var(--raio); }
+
+.c-form__aviso--alerta,
+.c-form__aviso--correto,
+.c-form__aviso--incorreto {
+	display:flex; }
+
+.c-form__aviso--alerta {
+	background:var(--hex-padrao-laranja);  }
+
+.c-form__aviso--correto {
+	background:var(--hex-padrao-verde); }
+
+.c-form__aviso--incorreto {
+	background:var(--hex-padrao-vermelho); }
+
+
+.c-form__aviso__texto {
+	width:auto;
+	flex-grow:1;
+	color:var(--rgba-branco-1);
+	font-size:16px;
+	line-height:24px; }
+
+
+.c-form__aviso__icone {
+	width:20px;
+	height:20px;
+	margin:2px 0 2px 12px;
+	flex-shrink:0;
+	color:var(--rgba-branco-1);
+	font-size:20px; }
+
+
+/* ---- isDesign.com.br ---- */

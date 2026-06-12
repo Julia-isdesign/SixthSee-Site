@@ -1,0 +1,144 @@
+
+/* ---- Auxiliares ---- */
+
+
+.a-clear::after {
+	content:"";
+	width:100%;
+	height:0;
+	clear:both;
+	display:block;
+	overflow:hidden; }
+
+
+.a-hidden {
+	width:1px;
+	height:1px;
+	padding:0;
+	border:none;
+	overflow:hidden;
+	position:absolute;
+	clip:rect(1px, 1px, 1px, 1px);
+	clip-path:inset(0px 0px 99.9% 99.9%); }
+
+
+.a-img {
+	width:100%;
+	height:100%; }
+
+.a-img--cover {
+	object-fit:cover;
+	object-position:center; }
+
+.a-img--contain {
+	object-fit:contain;
+	object-position:center; }
+
+	
+/* ---- Efeitos de hover ---- */
+
+
+.a-hover-opacity {
+	transition:opacity 0.2s; }
+
+.a-hover-opacity:hover {
+	opacity:var(--hover-opacity); }
+
+
+.a-hover-transform {
+	transition:transform 0.2s; }
+
+.a-hover-transform:hover {
+	transform:translateY(-5px); }
+
+
+/* ---- Material Icons ---- */
+
+
+.a-mi, .a-mi--a::after, .a-mi--b::before {
+	--tamanho-mi:20px;
+	width:var(--tamanho-mi);
+	height:var(--tamanho-mi);
+	display:inline-block;
+	overflow:hidden;
+	color:var(--rgba-preto-1);
+	direction:ltr;
+	font-family:"Material Icons Round";
+	font-size:var(--tamanho-mi);
+	font-style:normal;
+	font-weight:400;
+	letter-spacing:normal;
+	line-height:1;
+	text-transform:none;
+	white-space:nowrap;
+	word-wrap:normal;
+	-moz-font-feature-settings:"liga";
+	-moz-osx-font-smoothing:grayscale; }
+
+
+/* ---- Capa ---- */
+
+
+.a-capa {
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain; }
+
+.a-capa--claro {
+	background-color:var(--hex-miv-branco);
+	background-image:url("../../img/icone-foto-preto.svg"); }
+
+.a-capa--escuro {
+	background-color:var(--hex-miv-preto);
+	background-image:url("../../img/icone-foto-branco.svg"); }
+
+
+/* ---- Loader ---- */
+
+
+.a-loader {
+	min-height:160px;
+	position:relative;
+	z-index:0; }
+
+
+.a-loader::before {
+	content:"";
+	width:100%; 
+	height:100%; 
+	display:block;
+	position:absolute; 
+	top:0; 
+	left:0; 
+	z-index:9990;
+	background:inherit; 
+	opacity:var(--alfa-branco-2); }
+
+
+.a-loader::after {
+	content:url("../../img/icone-carregando-preto.svg");
+	width:40px;
+	height:40px;
+	padding:10px;
+	display:block;
+	position:absolute;
+	top:60px;
+	left:calc(50% - 20px);
+	z-index:9999;
+	background:var(--hex-miv-branco);
+	border-radius:50%;
+	box-shadow:0 0 4px 0 var(--rgba-sombra-2);
+	animation:fx-loader 0.6s linear infinite; }
+
+.a-loader--escuro::after {
+	content:url("../../img/icone-carregando-branco.svg");
+	background:var(--hex-cinza-10); }
+
+
+@keyframes fx-loader {
+	from { transform:none; }
+	to { transform:rotate(360deg); }
+}
+
+
+/* ---- isDesign.com.br ---- */

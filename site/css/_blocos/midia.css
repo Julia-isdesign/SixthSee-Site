@@ -1,0 +1,96 @@
+
+.b-midia {
+	padding:10px 10px 20px;
+	background-color:var(--hex-miv-branco);
+	border-radius:var(--raio); }
+
+
+/* ---- Imagem ---- */
+
+
+.b-midia__imagem {
+	aspect-ratio:auto;
+	overflow:hidden;
+	border-radius:var(--raio); }
+
+
+/* ---- Proporção ---- */
+
+
+.b-midia__proporcao {
+	aspect-ratio:4 / 3;
+	overflow:hidden;
+	border-radius:var(--raio); }
+
+@media (min-width:720px) {
+	.b-midia__proporcao {
+		aspect-ratio:16 / 9; }
+}
+
+
+/* ---- YouTube ---- */
+
+.b-midia__youtube {
+	position:relative;
+	overflow:hidden;
+	border-radius:var(--raio); }
+
+.b-midia__youtube::before {
+	content:"";
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,0.5);
+	transition:background-color 0.2s; }
+
+.b-midia__youtube:hover::before {
+	background-color:rgba(0,0,0,0.25); }
+
+
+.b-midia__youtube__logo {
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:calc(50% - 32px);
+	left:calc(50% - 32px);
+	z-index:1; }
+
+
+.b-midia__youtube__cover {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	object-position:center; }
+
+
+/* ---- Áudio ---- */
+
+.b-midia__audio {
+	padding:10px 10px 20px;
+	background:var(--degrade-miv);
+	border-radius:var(--raio); }
+
+.b-midia__audio__player {
+	width:100%; }
+
+
+/* ---- SoundCloud ---- */
+
+
+.b-midia__soundcloud {
+	overflow:hidden;
+	border-radius:var(--raio); }
+
+
+/* ---- Legenda ---- */
+
+
+.b-midia__legenda {
+	padding-top:20px;
+	text-align:center; }
+
+
+/* ---- isDesign.com.br ---- */

@@ -1,0 +1,171 @@
+
+/* ---- Carrossel ---- */
+
+
+.c-carrossel {
+	position:relative;
+	background:var(--hex-miv-preto); }
+
+.c-carrossel__scroller {
+	width:100%;
+	overflow:hidden; }
+
+
+.c-carrossel__lista {
+	width:1000%;
+	display:flex;
+	align-items:center;
+	transition:transform 0.4s; }
+
+.c-carrossel__lista__item {
+	width:100%; }
+
+
+@media (hover:none) and (max-width:719px) {
+	.c-carrossel__scroller {
+		overflow-x:scroll;
+		scroll-behavior:smooth;
+		scroll-snap-type:x mandatory; }
+
+	.c-carrossel__lista {
+		transform:none !important;
+		transition:none; }
+
+	.c-carrossel__lista__item {
+		scroll-snap-align:start; }
+}
+
+
+/* ---- Setas ---- */
+
+
+.c-carrossel__seta {
+	display:none; }
+
+@media (hover:hover) and (min-width:720px) {
+	.c-carrossel__seta {
+		width:40px;
+		height:40px;
+		padding:10px;
+		display:block;
+		position:absolute;
+		top:calc(50% - 20px);
+		z-index:1;
+		color:var(--rgba-preto-1);
+		background-color:var(--hex-miv-branco);
+		border-radius:50%;
+		transition:opacity 0.2s; }
+	
+	.c-carrossel__seta--d {
+		right:20px; }
+	
+	.c-carrossel__seta--e {
+		left:20px; }
+}
+
+@media (hover:hover) and (min-width:1280px) {
+	.c-carrossel__seta {
+		top:calc(50% - 10px); }
+}
+
+
+/* ---- Conteúdo ---- */
+
+
+.c-carrossel__conteudo {
+	width:100%;
+	height:480px;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	z-index:0; }
+
+.c-carrossel__conteudo::after {
+	content:"";
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:1;
+	background:linear-gradient(transparent, var(--rgba-preto-2)); }
+
+
+@media (min-width:960px) {
+	.c-carrossel__conteudo::after {
+		height:640px; }
+}
+
+
+.c-carrossel__imagem {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+	object-fit:cover;
+	object-position:center; }
+
+.c-carrossel__conteudo--link .c-carrossel__imagem {
+	transition:transform 0.2s; }
+
+.c-carrossel__conteudo--link:hover .c-carrossel__imagem {
+	transform:scale(1.05);
+	transition:transform 0.4s; }
+
+
+.c-carrossel__envelope {
+	padding-top:40px;
+	padding-bottom:40px;
+	display:flex;
+	flex-direction:column;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	z-index:2;
+	transform:translateX(-50%); }
+
+.c-carrossel__titulo {
+	color:var(--rgba-branco-1);
+	text-align:center; }
+
+
+@media (min-width:960px) {
+	.c-carrossel__conteudo {
+		height:640px; }
+}
+
+
+/* ---- Menu ---- */
+
+
+.c-carrossel__menu {
+	display:flex;
+	align-items:center;
+	gap:5px;
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	z-index:1;
+	transform:translateX(-50%); }
+
+
+.c-carrossel__menu__item {
+	width:5px;
+	height:5px;
+	border-radius:4px;
+	background-color:#fff;
+	opacity:0.5;
+	transition:opacity 0.2s, width 0.2s; }
+
+.c-carrossel__menu__item:hover,
+.c-carrossel__menu__item.ativo {
+	opacity:1; }
+
+.c-carrossel__menu__item.ativo {
+	width:10px; }
+
+
+/* ---- isDesign.com.br ---- */

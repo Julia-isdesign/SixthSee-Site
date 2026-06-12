@@ -1,0 +1,157 @@
+
+/* ---- Rodapé ---- */
+
+
+.c-rodape {
+	background:var(--degrade-miv); }
+
+
+.c-rodape__envelope {
+	padding:80px 40px; }
+
+
+.c-rodape__mapa {
+	display:grid;
+	grid-template-columns:100%;
+	gap:60px 20px; }
+
+
+@media (min-width:560px) {
+	.c-rodape__mapa {
+		grid-template-columns:repeat(2, calc((100% - 40px) / 2)); }
+}
+
+@media (min-width:960px) {
+	.c-rodape__mapa {
+		grid-template-columns:repeat(4, calc((100% - (40px * 3)) / 4)); }
+}
+
+@media (min-width:1280px) {
+	.c-rodape__mapa {
+		grid-template-columns:repeat(4, calc((100% - (60px * 3)) / 4));
+		gap:60px; }
+}
+
+
+/* ---- Logo ---- */
+
+
+.c-rodape__logo {
+	width:120px;
+	height:32px;
+	display:block; }
+
+
+/* ---- Texto, icone e link ---- */
+
+
+.c-rodape__titulo {
+	text-transform:uppercase; }
+
+.c-rodape__texto {
+	color:var(--rgba-preto-2); }
+
+	
+.c-rodape__link {
+	display:flex;
+	align-items:flex-start;
+	gap:10px; }
+
+	
+.c-rodape__link__icone {
+	width:20px;
+	height:20px;
+	flex-shrink:0;
+	color:var(--hex-miv-preto);
+	opacity:var(--alfa-preto-3); }
+
+.c-rodape__link__texto {
+	color:var(--rgba-preto-2); }
+
+.c-rodape__link:hover .c-rodape__link__texto {
+	text-decoration:underline; }
+
+/* ---- Mapa ---- */
+
+
+.c-rodape__lista {
+	margin-top:20px;
+	display:flex;
+	flex-direction:column;
+	gap:10px; }
+
+
+.c-rodape__lista--social {
+	gap:20px; }
+
+
+/* ---- Formas de pagamento e entrega ---- */
+
+
+.c-rodape__formas {
+	margin-top:40px; }
+
+.c-rodape__formas__lista {
+	margin-top:20px;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	gap:8px; }
+	
+.c-rodape__formas__item {
+	width:60px;
+	height:40px;
+	padding:5px;
+	background-color:var(--hex-miv-branco); 
+	border-radius:var(--raio); }
+
+
+/* ---- Créditos ---- */
+
+
+.c-creditos {
+	padding:0 40px 40px;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:center;
+	gap:20px; }
+
+
+.c-creditos__copyright {
+	color:var(--rgba-preto-2);  }
+
+
+.c-creditos__isdesign {
+	width:60px;
+	height:32px; }
+
+
+@media (min-width:720px) {
+	.c-creditos {
+		padding-bottom:40px;
+		flex-direction:row;
+		align-items:center;
+		justify-content:space-between; }
+}
+
+
+/* ---- WhatsApp ---- */
+
+
+.c-whatsapp {
+	width:60px;
+	height:60px;
+	padding:10px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	background-color:#25D366;
+	border-radius:50%; }
+
+.c-whatsapp__icone {
+	width:40px;
+	height:40px; }
+
+
+/* ---- isDesign.com.br ---- */

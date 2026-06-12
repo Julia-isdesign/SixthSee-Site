@@ -1,0 +1,192 @@
+
+/* ---- Estrutura ---- */
+
+
+.p-estrutura {
+	padding-top:80px;
+	padding-bottom:80px;
+	display:grid;
+	gap:80px; }
+
+
+@media (min-width:960px) {
+	.p-estrutura {
+		grid-auto-flow:dense;
+		grid-template-columns:repeat(4, calc((100% - 240px) / 4)); }
+
+	.p-estrutura__info {
+		grid-column:3/5; }
+
+	.p-estrutura__galeria {
+		grid-column:1/3; }
+}
+
+
+/* ---- Galeria ---- */
+
+
+.p-galeria {
+	margin:0 -20px;
+	background-color:var(--hex-miv-branco); }
+
+.p-galeria__link {
+	padding:20px;
+	display:none; }
+
+.p-galeria__link.ativo {
+	display:block; }
+
+.p-galeria__imagem {
+	width:100%;
+	aspect-ratio:1/1;
+	overflow:hidden;
+	border-radius:var(--raio) }
+
+.p-galeria__lista {
+	width:100%;
+	padding:20px;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	gap:10px; }
+
+
+.p-galeria__botao {
+	width:56px;
+	height:56px;
+	display:block; }
+
+.p-galeria__botao.ativo {
+	opacity:var(--hover-opacity);
+	cursor:default; }
+
+@media (min-width:720px) {
+	.p-galeria {
+		margin:0 -40px; }
+
+	.p-galeria__botao {
+		width:70px;
+		height:70px; }
+}
+
+@media (min-width:960px) {
+	.p-galeria {
+		margin:0;
+		position:sticky;
+		top:20px;
+		border-radius:var(--raio); }
+}
+
+
+/* ---- Cabeçalho ---- */
+
+
+.p-cabecalho {
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	gap:20px; }
+
+.p-cabecalho__migalhas {
+	display:none; }
+
+.p-cabecalho__migalhas--ref {
+	display:block; }
+
+.p-cabecalho__migalhas__item {
+	color:var(--rgba-preto-2);
+	font-size:16px;
+	line-height:24px; }
+
+.p-cabecalho__migalhas__item {
+	display:none; }
+
+.p-cabecalho__migalhas__item--ref {
+	display:inline; }
+
+.p-cabecalho__migalhas__item--link:hover {
+	text-decoration:underline; }
+
+	
+.p-cabecalho__marca {
+	margin-top:10px;
+	color:var(--rgba-preto-2);
+	font-size:16px;
+	line-height:24px; }
+
+.p-cabecalho__preco:hover {
+	opacity:1; }
+
+
+@media (min-width:720px) {
+	.p-cabecalho__migalhas {
+		display:block; }
+
+	.p-cabecalho__migalhas__item {
+		display:inline; }
+	
+	.p-cabecalho__marca {
+		line-height:20px; }
+}
+
+
+/* ---- Tabela ---- */
+
+
+.p-tabela {
+	background:var(--hex-miv-branco);
+	border-radius:var(--raio); }
+
+
+.p-tabela table {
+	width:100% !important;
+	border-radius:var(--raio); }
+
+.p-tabela thead td:first-of-type,
+.p-tabela thead th:first-of-type {
+	border-top-left-radius:var(--raio); }
+
+.p-tabela thead td:last-of-type,
+.p-tabela thead th:last-of-type {
+	border-top-right-radius:var(--raio); }
+
+.p-tabela tbody tr:last-of-type td:first-of-type {
+	border-bottom-left-radius:var(--raio); }
+
+.p-tabela tbody tr:last-of-type td:last-of-type {
+	border-bottom-right-radius:var(--raio); }
+
+.p-tabela tbody tr + tr {
+	border-top:2px solid var(--hex-cinza-2); }
+
+
+.p-tabela td {
+	padding:12px 10px;
+	font-size:14px;
+	line-height:20px; }
+
+.p-tabela td {
+	color:var(--rgba-preto-2);
+	vertical-align:middle; }
+
+
+.p-tabela td:first-child {
+	width:130px;
+	padding-left:20px; }
+
+.p-tabela td:last-child {
+	padding-right:20px; }
+
+@media (min-width:720px) {
+	.p-tabela td {
+		font-size:16px;
+		line-height:24px; }
+}
+
+
+.p-estrutura__info .b-midia {
+	padding:10px; }
+
+
+/* ---- isDesign.com.br ---- */

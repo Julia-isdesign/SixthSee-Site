@@ -1,0 +1,57 @@
+
+/* ---- Fontes ---- */
+
+
+.f-titulo {
+	color:var(--rgba-preto-1);
+	font-size:16px;
+	font-weight:bold;
+	line-height:24px; }
+
+.f-titulo--x {
+	color:var(--hex-miv-laranja); }
+
+.f-titulo--h6 {
+	font-size:18px;
+	line-height:26px; }
+
+.f-titulo--h5 {
+	font-size:20px;
+	line-height:28px; }
+
+.f-titulo--h4 {
+	font-size:24px;
+	line-height:32px; }
+
+.f-titulo--h3 {
+	font-size:28px;
+	line-height:36px; }
+
+.f-titulo--h2 {
+	font-size:32px;
+	line-height:40px; }
+
+.f-titulo--h1 {
+	font-size:36px;
+	line-height:44px; }
+
+
+.f-subtitulo {
+	color:var(--rgba-preto-3);
+	font-size:20px;
+	font-style:italic;
+	line-height:30px; }
+
+
+@media (min-width:1120px) {
+	.f-titulo--h2 {
+		font-size:36px;
+		line-height:44px; }
+
+	.f-titulo--h1 {
+		font-size:40px;
+		line-height:48px; }
+}
+
+
+/* ---- isDesign.com.br ---- */

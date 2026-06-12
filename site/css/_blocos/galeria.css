@@ -1,0 +1,37 @@
+
+/* ---- Galeria ---- */
+
+
+.b-galeria {
+	display:grid;
+	grid-template-columns:repeat(2, 1fr);
+	gap:10px; }
+
+.b-galeria__link {
+	display:block;
+	overflow:hidden;
+	border-radius:var(--raio); }
+
+
+.b-galeria__imagem {
+	width:100%;
+	aspect-ratio:4 / 3; }
+
+
+@media (min-width:640px) {
+	.b-galeria {
+		grid-template-columns:repeat(3, 1fr); }
+}
+
+@media (min-width:720px) {
+	.b-galeria {
+		gap:20px; }
+}
+
+@media (min-width:1120px) {
+	.b-galeria {
+		grid-template-columns:repeat(4, 1fr); }
+}
+
+
+/* ---- isDesign.com.br ---- */

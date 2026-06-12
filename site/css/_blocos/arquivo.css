@@ -1,0 +1,46 @@
+
+/* ---- Arquivo ---- */
+
+
+.b-arquivos {
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	gap:10px; }
+
+
+.b-arquivo {
+	padding:20px;
+	display:flex;
+	align-items:flex-start;
+	gap:20px;
+	background:var(--hex-miv-branco);
+	border-radius:var(--raio); }
+
+
+@media (min-width:560px) {
+	.b-arquivo {
+		padding-right:40px;
+		display:inline-flex; }
+}
+
+
+/* ---- Conteúdo ---- */
+
+
+.b-arquivo__icone {
+	flex-shrink:0; }
+
+
+.b-arquivo__conteudo {
+	display:flex;
+	flex-direction:column;
+	flex-grow:1;
+	gap:10px; }
+
+.b-arquivo__titulo,
+.b-arquivo__legenda {
+	line-height:20px; }
+
+
+/* ---- isDesign.com.br ---- */

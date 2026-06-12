@@ -1,0 +1,54 @@
+
+/* ---- Grade ---- */
+
+
+.b-grade {
+	display:grid;
+	gap:20px;
+	grid-template-columns:100%; }
+
+
+@media (min-width:720px) {
+	.b-grade {
+		grid-template-columns:repeat(2, calc((100% - 20px) / 2)); }
+}
+
+@media (min-width:1280px) {
+	.b-grade {
+		grid-template-columns:repeat(3, calc((100% - (20px * 2)) / 3)); }
+}
+
+
+/* ---- Item ---- */
+
+
+.b-grade__item {
+	width:100%;
+	height:100%;
+	padding:20px;
+	background-color:var(--hex-miv-branco);
+	border-radius:var(--raio); }
+
+
+/* ---- Marcador ---- */
+
+
+.b-grade__marcador {
+	width:100%;
+	height:20px;
+	display:inline-block;
+	color:rgba(0,0,0,0.5);
+	font-size:20px;
+	line-height:20px; }
+
+
+/* ---- Conteúdo ---- */
+
+
+.b-grade__conteudo {
+	display:flex;
+	flex-direction:column;
+	gap:30px; }
+
+
+/* ---- isDesign.com.br ---- */

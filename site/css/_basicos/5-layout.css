@@ -1,0 +1,46 @@
+
+/* ---- Blocos ---- */
+
+
+.l-bloco + .l-bloco {
+	padding-top:60px; }
+
+.l-bloco + .l-bloco--botao,
+.l-bloco--titulo + .l-bloco {
+	padding-top:30px; }
+
+
+/* ---- Conteúdo ---- */
+
+
+.l-conteudo {
+	padding-top:120px;
+	padding-bottom:120px; }
+
+
+.l-envelope {
+	width:100%;
+	max-width:1340px;
+	padding-right:20px;
+	padding-left:20px;
+	margin:0 auto; }
+
+.l-envelope--m {
+	max-width:1020px; }
+
+
+@media (min-width:720px) {
+	.l-envelope {
+		padding-right:40px;
+		padding-left:40px; }
+}
+
+
+/* ---- Form ---- */
+
+
+.l-form {
+	background-color:var(--hex-miv-branco); }
+
+
+/* ---- isDesign.com.br ---- */

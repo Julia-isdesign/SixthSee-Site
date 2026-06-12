@@ -1,0 +1,109 @@
+
+/* ---- Botão ---- */
+
+
+.c-botao {
+	min-width:40px;
+	min-height:40px;
+	padding:10px 30px;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	background:var(--degrade-miv);
+	border-radius:25px;
+	transition:opacity 0.2s; }
+
+.c-botao:hover {
+	opacity:var(--hover-opacity); }
+
+
+.c-botao--icone {
+	padding:10px; }
+
+
+.c-botao--x {
+	background:var(--hex-miv-preto); }
+
+.c-botao--borda {
+	background:transparent;
+	box-shadow:inset 0 0 0 2px var(--hex-miv-preto); }
+
+
+.c-botao--luz {
+	background:var(--rgba-luz-2); }
+
+.c-botao--sombra {
+	background:var(--rgba-sombra-2); }
+
+
+/* ---- Botão > Ícone ---- */
+
+
+.c-botao .c-botao__icone {
+	--tamanho-mi:24px;
+	margin:0 12px 0 -4px;
+	flex-shrink:0;
+	overflow:hidden;
+	color:var(--hex-miv-preto); }
+
+
+.c-botao .c-botao__texto + .c-botao__icone {
+	margin:0 -4px 0 12px; }
+
+.c-botao--icone .c-botao__icone {
+	margin:0; }
+
+.c-botao--x .c-botao__icone {
+	color:var(--hex-miv-amarelo-1); }	
+
+.c-botao--borda .c-botao__icone {
+	color:var(--hex-miv-preto); }
+
+
+.c-botao--luz .c-botao__icone {
+	color:var(--rgba-branco-1); }	
+
+.c-botao--sombra .c-botao__icone {
+	color:var(--rgba-preto-1); }
+
+
+/* ---- Botão > Texto ---- */
+
+
+.c-botao .c-botao__texto {
+	color:var(--rgba-preto-1);
+	font-size:16px;
+	font-weight:bold;
+	line-height:24px;
+	text-transform:uppercase; }
+
+
+.c-botao--icone .c-botao__texto {
+	display:none; }
+
+
+.c-botao--x .c-botao__texto {
+	color:var(--hex-miv-amarelo-1); }
+
+.c-botao--borda .c-botao__texto {
+	color:var(--hex-miv-preto); }
+
+
+.c-botao--luz .c-botao__texto {
+	color:var(--rgba-branco-1); }	
+
+.c-botao--sombra .c-botao__texto {
+	color:var(--rgba-preto-1); }
+
+
+/* ---- Grupo de botões ---- */
+
+
+.c-botoes {
+	display:flex;
+	flex-wrap:wrap;
+	align-items:flex-start;
+	gap:10px; }
+
+
+/* ---- isDesign.com.br ---- */

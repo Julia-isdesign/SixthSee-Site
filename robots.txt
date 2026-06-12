@@ -1,0 +1,24 @@
+# Permitir os bots dos buscadores mais conhecidos
+User-agent: Googlebot
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: Slurp
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
+User-agent: Baiduspider
+Disallow:
+
+User-agent: YandexBot
+Disallow:
+
+# Bloquear todos os outros bots
+User-agent: *
+Disallow: /
+
+Sitemap: https://www.seecranes.ind.br/sitemap.xml
