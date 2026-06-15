@@ -47,7 +47,7 @@ $topo_links = [[
 			<?php # Whatsapp ?>
 			<a href="https://wa.me/+5554999512602" target="_blank" class="c-topo__link c-topo__link--whatsapp | a-hover-opacity">
 				<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="c-topo__link__icone" aria-hidden="true">
-					<use xlink:href="img/logo-plataformas.svg#whatsapp-black"></use>
+					<use xlink:href="img/logo-plataformas.svg#whatsapp-white"></use>
 				</svg>
 				<span class="c-topo__link__texto">(54) 999.512.602</span>
 			</a>

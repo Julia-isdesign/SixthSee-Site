@@ -46,10 +46,11 @@
 
 
 .c-rodape__titulo {
+	color:var(--rgba-branco-1) !important;
 	text-transform:uppercase; }
 
 .c-rodape__texto {
-	color:var(--rgba-preto-2); }
+	color:var(--rgba-branco-2); }
 
 	
 .c-rodape__link {
@@ -62,11 +63,11 @@
 	width:20px;
 	height:20px;
 	flex-shrink:0;
-	color:var(--hex-miv-preto);
-	opacity:var(--alfa-preto-3); }
+	color:var(--hex-miv-branco);
+	opacity:var(--alfa-branco-3); }
 
 .c-rodape__link__texto {
-	color:var(--rgba-preto-2); }
+	color:var(--rgba-branco-2); }
 
 .c-rodape__link:hover .c-rodape__link__texto {
 	text-decoration:underline; }

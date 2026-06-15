@@ -57,8 +57,14 @@
 	--hex-padrao-verde:#34c759;
 	--hex-padrao-vermelho:#ff3a30;
 
+	--hex-miv-azul-1:#171f2a;
+	--hex-miv-azul-2:#233343;
+	--hex-miv-azul-3:#184668;
+	--hex-miv-ciano-1:#3eb2ef;
+	--hex-miv-ciano-2:#16739e;
 
-	--degrade-miv:linear-gradient(135deg, var(--hex-miv-amarelo-1), var(--hex-miv-amarelo-2));
+
+	--degrade-miv:linear-gradient(135deg, var(--hex-miv-azul-3), var(--hex-miv-azul-2));
 	--degrade-sombra:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75));
 
 

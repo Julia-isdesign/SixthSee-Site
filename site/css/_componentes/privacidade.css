@@ -9,7 +9,7 @@
 	top:100%;
 	left:0;
 	z-index:var(--z-index-privacidade);
-	background:var(--hex-miv-preto);
+	background:var(--hex-miv-ciano-2);
 	transition:transform 0.2s; }
 
 .c-privacidade.ativo {

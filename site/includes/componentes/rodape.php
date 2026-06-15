@@ -92,7 +92,7 @@ $rodape_contato = [[
 				</div>
 			</div>
 			<div class="c-rodape__mapa__item">
-				<h6 class="c-rodape__titulo | f-titulo">See Cranes</h6>
+				<h6 class="c-rodape__titulo | f-titulo">Sixth See</h6>
 				<ul class="c-rodape__lista">
 					<?php foreach ($rodape_links as $item) { 
 						$target = isset($item["target"]) ? $item["target"] : "_self"; ?>
@@ -124,7 +124,7 @@ $rodape_contato = [[
 							<a href="<?=$item["url"]?>" class="c-rodape__link">
 								<?php if ($item["imagem"]) { ?>
 									<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="c-rodape__link__icone" aria-hidden="true">
-										<use xlink:href="img/logo-plataformas.svg#<?=$item["icone"]?>-black"></use>
+										<use xlink:href="img/logo-plataformas.svg#<?=$item["icone"]?>-white"></use>
 									</svg>
 								<?php } else { ?>
 								<i class="c-rodape__link__icone | a-mi"><?=$item["icone"]?></i>
@@ -142,7 +142,7 @@ $rodape_contato = [[
 			<p>Copyright <?=NOME_SITE?> - Todos os direitos reservados</p>
 		</div>
 		<a href="https://www.isdesign.com.br/" target="_blank" class="c-creditos__isdesign | a-hover-opacity"> 
-			<img src="img/logo-isdesign-preto.svg"
+			<img src="img/logo-isdesign-branco.svg"
 				 alt="Logo isDesign Softwares"
 				 loading="lazy"
 				 class="a-img">

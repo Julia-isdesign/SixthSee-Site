@@ -207,10 +207,10 @@
 
 .p-filtro__cabecalho {
 	padding:12px 20px;
-	background-color:var(--hex-miv-preto); }
+	background-color:var(--degrade-miv); }
 
 .p-filtro__titulo {
-	color:var(--hex-miv-amarelo-1);
+	color:var(--hex-miv-branco);
 	font-size:16px;
 	font-weight:bold;
 	line-height:24px; }
@@ -218,7 +218,7 @@
 
 .p-filtro .c-form {
 	gap:0;
-	background:var(--degrade-miv); }
+	background:var(--hex-miv-ciano-2); }
 	
 .p-filtro__pesquisa {
 	width:100%;
@@ -258,13 +258,13 @@
 	align-items:center; }
 
 .p-filtro .c-form__check__texto {
-	color:var(--rgba-preto-1);
+	color:var(--rgba-branco-1);
 	font-size:14px;
 	font-weight:bold;
 	line-height:20px; }
 
 .p-filtro .c-form__check__icone::before {
-	color:var(--rgba-preto-2); }
+	color:var(--rgba-branco-2); }
 
 .p-filtro [type=radio]:checked+.c-form__check__icone::before {
 	content:"task_alt"; }
@@ -272,7 +272,7 @@
 
 
 .p-filtro.a-loader {
-	opacity:var(--alfa-preto-3); }
+	opacity:var(--alfa-branco-3); }
 
 .p-filtro.a-loader::after {
 	display:none; }
