@@ -30,9 +30,9 @@
 		
 		<?php # CSS ?>
 		<link rel="stylesheet" href="css/variaveis.css">
-		<link rel="stylesheet" href="css/reset.css?2023">
+		<link rel="stylesheet" href="css/reset.css?2026">
 		<link rel="stylesheet" href="css/layout.css">
-		<link rel="stylesheet" href="css/fontes.css">
+		<link rel="stylesheet" href="css/fontes.css?2026">
 
 		</style>
 	</head>
