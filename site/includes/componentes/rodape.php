@@ -32,13 +32,9 @@ $rodape_contato = [[
 	"icone" => "whatsapp",
 	"texto" => "(54) 999.512.602"
 ], [
-	"url" => "tel:+5554999512602",
-	"icone" => "phone",
-	"texto" => "(54) 999.512.602"
-], [
-	"url" => "mailto:contato@seecranes.ind.br",
+	"url" => "mailto:contato@6thsee.com.br",
 	"icone" => "email",
-	"texto" => "contato@seecranes.ind.br"
+	"texto" => "contato@6thsee.com.br"
 ],];
 ?>
 <footer class="c-rodape">
@@ -59,9 +55,6 @@ $rodape_contato = [[
 					</li>
 					<li>
 						<span class="c-rodape__texto | f-legenda">De segunda a sexta das 8:00 às 12:00 e das 13:30 às 18:00</span>
-					</li>
-					<li>
-						<span class="c-rodape__texto | f-legenda">Siga-nos no instagram: @seecranes </span>
 					</li>
 				</ul>
 

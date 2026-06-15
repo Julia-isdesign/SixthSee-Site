@@ -13,7 +13,7 @@ require_once(DIRETORIO_SITE."/_controle/plugins/phpmailer/src/SMTP.php");
 
 class ModuloEmails {
 
-	const REMETENTE = "seecranes@internacionalrepresentacoes.com";
+	const REMETENTE = "contato@6thsee.com.br";
 
 	# CSSs
     const CSS = [
@@ -140,12 +140,6 @@ class ModuloEmails {
 						<div style="'.ModuloEmails::CSS["margin-m"].'"></div>
 					';
 				}
-				/*else if ($campo == "Mensagem") {
-					$corpo["miolo"] .= '
-						<p style="'.ModuloEmails::TEXTO["legenda"].ModuloEmails::CSS["margin-g"].'">'.$campo.'</p>
-						<p style="'.ModuloEmails::TEXTO["corpo"].ModuloEmails::CSS["margin-p"].'">'.$valor.'</p>
-					';
-				}*/
 				else {
 					$corpo["miolo"] .= '
 						<p style="'.ModuloEmails::TEXTO["legenda"].ModuloEmails::CSS["margin-g"].'">'.$campo.'</p>
@@ -206,8 +200,8 @@ class ModuloEmails {
 		$phpMailer->Encoding   = 'base64';
 		$phpMailer->Host       = 'smtp.uni5.net';
 		$phpMailer->SMTPAuth   = true;
-		$phpMailer->Username   = "seecranes@internacionalrepresentacoes.com";
-		$phpMailer->Password   = 'q319wAse9$Kra$Us';
+		$phpMailer->Username   = "contato@6thsee.com.br";
+		$phpMailer->Password   = '8y@yx4PdvzGd';
 		$phpMailer->SMTPSecure = 'tls';
 		$phpMailer->Port       = 587;
 		$phpMailer->setFrom(ModuloEmails::REMETENTE, $nomeEmpresa);
