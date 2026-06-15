@@ -16,7 +16,7 @@ $(function(){
 		},
 		formatar: (item) => {
 			if (item.imagem) {
-                item.imagem = `https://www.seecranes.ind.br/uploads/${item.imagem}`;
+                item.imagem = JS_URL_BASE + `uploads/${item.imagem}`;
 
 				item.imagem = `
 					<figure class="p-produto__imagem">
@@ -104,7 +104,7 @@ $(function(){
 		let $url = $valor ? `produtos/${$valor}/${$filtro.data("url")}` : "produtos";
 		history.replaceState(null, "", $url);
 
-		$canonical.attr('href', `https://www.seecranes.ind.br/site/${$url}`);
+		$canonical.attr('href', JS_URL_SITE + `${$url}`);
 		
 		$filtro_subtitulo.text($filtro.data("nome"));
 	}

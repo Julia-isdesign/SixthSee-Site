@@ -114,3 +114,7 @@ foreach ($x_categorias as &$categoria) {
 // Remove a referencia //
 unset($categoria);
 ?>
+<script>
+	const JS_URL_BASE = "<?= URL_BASE ?>",
+		JS_URL_SITE = "<?= URL_SITE ?>";
+</script>

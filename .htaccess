@@ -6,15 +6,15 @@
 	
 	#
 	# inicial
-	Redirect /index.htm		https://www.seecranes.ind.br/site/
+	Redirect /index.htm		https://www.6thsee.com.br/site/
 	
 	# Painel
 	RewriteRule ^painel/?$ https://www.isdesign.com.br/painel/v1 [NC,L]
 	
 	#
 	# erros
-	ErrorDocument 400	https://www.seecranes.ind.br/site
-	ErrorDocument 403	https://www.seecranes.ind.br/site
-	ErrorDocument 404 	https://www.seecranes.ind.br/site
+	ErrorDocument 400	https://www.6thsee.com.br/site
+	ErrorDocument 403	https://www.6thsee.com.br/site
+	ErrorDocument 404 	https://www.6thsee.com.br/site
 
 </IfModule>

@@ -8,13 +8,13 @@
 	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 	# www
-	rewritecond %{http_host} ^seecranes.ind.br [NC]
-	rewriterule ^(.*)$ https://www.seecranes.ind.br/site/$1 [r=301,NC]
+	rewritecond %{http_host} ^6thsee.com.br [NC]
+	rewriterule ^(.*)$ https://www.6thsee.com.br/site/$1 [r=301,NC]
 
 	# 404
-	ErrorDocument 400 https://www.seecranes.ind.br/site/404
-	ErrorDocument 403 https://www.seecranes.ind.br/site/404
-	ErrorDocument 404 https://www.seecranes.ind.br/site/404
+	ErrorDocument 400 https://www.6thsee.com.br/site/404
+	ErrorDocument 403 https://www.6thsee.com.br/site/404
+	ErrorDocument 404 https://www.6thsee.com.br/site/404
 
 	# 404
 	RewriteRule ^404/?$ 404.php [NC,L]

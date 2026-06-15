@@ -32,7 +32,7 @@ define("NOME_COMPLETO", NOME_SITE. " | Soluções em elevação");
 
 define("PASTA_DINAMICOS", "uploads/");
 define("URL_LIMPA", "www.isdesign.com");
-define("URL_BASE", "https://www.seecranes.ind.br/");
+define("URL_BASE", "https://www.6thsee.com.br/");
 define("URL_ARQUIVOS", URL_BASE.PASTA_DINAMICOS);
 define("URL_SITE", URL_BASE."site/");
 

@@ -108,7 +108,7 @@ require_once("includes/manipuladores/push.php");
 		if ($x_categorias) {
 			foreach($x_categorias as $categoria) {
 				if ($categoria["nome"] == $pagina["categorias"]) {
-					$categoria_url = "https://www.seecranes.ind.br/site/produtos?categoria=".$categoria["id"];
+					$categoria_url = URL_SITE . "produtos?categoria=".$categoria["id"];
 				} 
 			}
 		}
@@ -195,7 +195,7 @@ require_once("includes/manipuladores/push.php");
 					<?php # Cabeçalho ?>
 					<header class="p-cabecalho | l-bloco">
 						<div class="p-cabecalho__migalhas <?=$pagina["referencia"] ? "p-cabecalho__migalhas--ref" : ""?>">
-							<a href="https://www.seecranes.ind.br/site/produtos"  class="p-cabecalho__migalhas__item p-cabecalho__migalhas__item--link">Produtos</a>
+							<a href="<?= URL_SITE . "produtos" ?>"  class="p-cabecalho__migalhas__item p-cabecalho__migalhas__item--link">Produtos</a>
 							<?php if ($pagina["categorias"]) { ?>
 							<span class="p-cabecalho__migalhas__item"> / </span>
 							<a href="<?=$categoria_url?>"  class="p-cabecalho__migalhas__item p-cabecalho__migalhas__item--link"><?=$pagina["categorias"]?></a>

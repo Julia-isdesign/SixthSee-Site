@@ -21,4 +21,4 @@ Disallow:
 User-agent: *
 Disallow: /
 
-Sitemap: https://www.seecranes.ind.br/sitemap.xml
+Sitemap: https://www.6thsee.com.br/sitemap.xml
