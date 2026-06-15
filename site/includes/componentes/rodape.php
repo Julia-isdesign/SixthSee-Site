@@ -47,7 +47,7 @@ $rodape_contato = [[
 		<div class="c-rodape__mapa">
 			<div class="c-rodape__mapa__item">
 				<a href="<?=URL_SITE?>" class="c-rodape__logo | a-hover-opacity">
-					<img src="img/logo-seecranes-150.webp"
+					<img src="img/logo-sixthsee-150.webp"
 						alt="Logo da <?=NOME_SITE?>"
 						class="a-img">
 				</a>

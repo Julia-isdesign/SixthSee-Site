@@ -23,11 +23,11 @@ $topo_links = [[
 	<div class="c-topo__envelope | l-envelope">
 		<?php # Logo ?>
 		<a href="<?=URL_SITE?>" class="c-topo__logo | a-hover-opacity">
-			<img srcset="img/logo-seecranes-150.webp 150w,
-						 img/logo-seecranes-112.webp 112w"
+			<img srcset="img/logo-sixthsee-150.webp 150w,
+						 img/logo-sixthsee-112.webp 112w"
 				 sizes="(max-width:719px) 112px,
 						150px"
-				 src="img/logo-seecranes-150.webp"
+				 src="img/logo-sixthsee-150.webp"
 				 alt="Logo da <?=NOME_SITE?>"
 				 class="a-img">
 		</a>

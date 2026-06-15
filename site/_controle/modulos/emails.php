@@ -63,7 +63,7 @@ class ModuloEmails {
 			<div style="background:'.ModuloEmails::CSS["cor-amarelo"].';">
 				<div style="'.ModuloEmails::ELEM["envelope"].'">
 					<a href="{{site.url}}" target="_blank" style="width:300px; height:80px; padding:0; margin:0; display:block; color:'.ModuloEmails::CSS["cor-amarelo"].'; text-decoration:none;">
-						<img src="{{site.url}}img/logo-seecranes.png" alt="Logotipo da {{site.nome}}" width="100%" height="100%">
+						<img src="{{site.url}}img/logo-sixthsee.png" alt="Logotipo da {{site.nome}}" width="100%" height="100%">
 					</a>
 				</div>
 			</div>

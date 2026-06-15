@@ -20,6 +20,6 @@ if ($push["pagina"]) {
 }
 
 # Imagens
-header("Link: </site/img/logo-seecranes-112.webp".VERSAO.">; rel=preload; as=image", false);
-header("Link: </site/img/logo-seecranes-150.webp".VERSAO.">; rel=preload; as=image", false);
+header("Link: </site/img/logo-sixthsee-112.webp".VERSAO.">; rel=preload; as=image", false);
+header("Link: </site/img/logo-sixthsee-150.webp".VERSAO.">; rel=preload; as=image", false);
 ?>

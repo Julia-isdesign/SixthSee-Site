@@ -7,19 +7,19 @@
 		<base href="https://www.6thsee.com.br/em-breve/">
 
 		<?php # SEO ?>
-		<title>Em breve | SEE Cranes</title>
-		<meta name="description" content="Em breve novo site da SEE Cranes">
+		<title>Em breve | Sixth See</title>
+		<meta name="description" content="Em breve novo site da Sixth See">
 		<meta name="category" content="elevação, segurança e produtividade">
 		<meta name="url" content="https://www.6thsee.com.br/em-breve">
 
 		<link href="img/core-favoritos.png" rel="icon">
 
-		<meta name="application-name" content="SEE Cranes">
+		<meta name="application-name" content="Sixth See">
 		<meta name="author" content="isDesign Softwares">
-		<meta name="subject" content="Em breve novo site da SEE Cranes">
-		<meta name="topic" content="Em breve novo site da SEE Cranes"> 
-		<meta name="abstract" content="Em breve novo site da SEE Cranes">
-		<meta name="summary" content="Em breve novo site da SEE Cranes">
+		<meta name="subject" content="Em breve novo site da Sixth See">
+		<meta name="topic" content="Em breve novo site da Sixth See"> 
+		<meta name="abstract" content="Em breve novo site da Sixth See">
+		<meta name="summary" content="Em breve novo site da Sixth See">
 
 		<meta name="coverage" content="Worldwide">
 		<meta name="directory" content="submission">
@@ -42,7 +42,7 @@
 
 			<div style="width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:40px;">
 				<figure style="width:200px;">
-					<img src="https://www.6thsee.com.br/em-breve/img/logo-seecranes.png" alt="Logo da SEE Cranes" style="width:100%; height:auto;">
+					<img src="https://www.6thsee.com.br/em-breve/img/logo-sixthsee.png" alt="Logo da Sixth See" style="width:100%; height:auto;">
 				</figure>
 
 				<h1 class="f-titulo f-titulo--h4">Novo site em breve.</h1>
