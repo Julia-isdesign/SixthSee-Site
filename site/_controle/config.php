@@ -24,10 +24,9 @@ ini_set('memory_limit', '256M');
 $dominio = $_SERVER["HTTP_HOST"];
 
 // Constantes
-define("COR", "#fdff04");
-define("VERSAO", "?v=2024-04-19");
+define("VERSAO", "?v=2026");
 
-define("NOME_SITE", "SEE Cranes");
+define("NOME_SITE", "Sixth See");
 define("NOME_COMPLETO", NOME_SITE. " | Soluções em elevação");
 
 define("PASTA_DINAMICOS", "uploads/");
@@ -45,7 +44,6 @@ define("DIRETORIO_SITE", DIRETORIO_BASE."site/");
 define("DIRETORIO_DINAMICOS", DIRETORIO_BASE.PASTA_DINAMICOS);
 
 define("GOOGLE_MAPS_KEY", "AIzaSyD94Tv19VX42mktlEo1Ok_XruE7JDkf3cw");
-define("COMPLEMENTO_ACESSOS", "");
 define("SECRET_PASS", "");
 
 // se alterar aqui, precisa alterar no Painel Padrão também.
@@ -65,17 +63,27 @@ define("IP_DESENVOLVEDOR", [
 *************************************************************************************************/
 
 function conectaBD($return = false) : mysqli{
-	
-	# Variaveis para conexão com o banco de dados e servidor
-	$host = "mysql.seecranes.ind.br";
-	$hostAlt = "mysql34-farm15.uni5.net";
-	$user = "seecranes";
-	$senha = "1re29m223AWruoMK34lsZ2A6Q".COMPLEMENTO_ACESSOS;
-	$banco = "seecranes";
 
-	//------------------------------------------------
+	// Carregar credenciais de um arquivo externo
+	require_once('acessos/access_key.php');
+	$credenciais = require('acessos/bd_mysql.php');
 
-	$conex = @mysqli_connect($host, $user, $senha, $banco);
+	//variaveis para conexão com o banco de dados e servidor.
+	$host 		= $credenciais['hostname'];
+	$usuario	= $credenciais['user'];
+	$banco		= $credenciais['database'];
+	$hostAlt	= $credenciais['host_alt'];
+
+	// Descriptografar a senha
+	$password = openssl_decrypt($credenciais['password'], 'aes-256-cbc', ACCESS_KEY, 0, substr(ACCESS_IV, 0, 16));
+
+	if($password == false){
+		printf("Erro ao descriptografar a senha do banco de dados MySQL");
+		return false;
+	}
+
+    // conecta com o banco de dados principal
+	$conex = @mysqli_connect($host, $usuario, $password, $banco);
 
 	// check connection 1
 	if (mysqli_connect_errno()) {
