@@ -11,10 +11,6 @@ $rodape_links = [[
 ], [
 	"url" => "contato",
 	"texto" => "Contato"
-], [
-	"url" => URL_BASE. "uploads/catalogos/Catalogo_de_Produtos.pdf",
-	"texto" => "Catálogo de Produtos",
-	"target" => "blank"
 ]];
 
 if ($x_categorias) {
@@ -50,39 +46,10 @@ $rodape_contato = [[
 				<ul class="c-rodape__lista">
 					<li>
 						<span class="c-rodape__texto | f-legenda">
-							Rua Figueira de Melo, 765<br>Garibaldi - RS<br>CEP 95720-000
+							Rua Jacob Ely, 274 Sl 409<br>Garibaldi - RS<br>CEP 95720-000
 						</span>
 					</li>
-					<li>
-						<span class="c-rodape__texto | f-legenda">De segunda a sexta das 8:00 às 12:00 e das 13:30 às 18:00</span>
-					</li>
 				</ul>
-
-				<div class="c-rodape__formas">
-					<h6 class="c-rodape__titulo | f-titulo">Formas de pagamento</h6>
-					<div class="c-rodape__formas__lista">
-						<figure class="c-rodape__formas__item">
-							<img src="img/rodape-logo-pix.webp" alt="Logo PIX" class="a-img a-img--contain">
-						</figure>
-						<figure class="c-rodape__formas__item">
-							<img src="img/rodape-logo-boleto.webp" alt="Logo boleto" class="a-img a-img--contain">
-						</figure>
-					</div>
-				</div>
-				<div class="c-rodape__formas">
-					<h6 class="c-rodape__titulo | f-titulo">Formas de entrega</h6>
-					<div class="c-rodape__formas__lista">
-						<figure class="c-rodape__formas__item">
-							<img src="img/rodape-logo-sedex.webp" alt="Logo SEDEX" class="a-img a-img--contain">
-						</figure>
-						<figure class="c-rodape__formas__item">
-							<img src="img/rodape-logo-pac.webp" alt="Logo PAC" class="a-img a-img--contain">
-						</figure>
-						<figure class="c-rodape__formas__item">
-							<img src="img/rodape-logo-retirada.webp" alt="Logo retirada na loja" class="a-img a-img--contain">
-						</figure>
-					</div>
-				</div>
 			</div>
 			<div class="c-rodape__mapa__item">
 				<h6 class="c-rodape__titulo | f-titulo">Sixth See</h6>
